@@ -77,14 +77,11 @@
 
 @media (max-width: 1420px) {
   .help__decoration {
+    right: 0;
     font-size: 4.73vw;
   }
 }
 @media (max-width: 820px) {
-  .container {
-    max-width: 420px;
-    margin: 0 auto;
-  }
   .help__decoration {
     display: none;
   }
@@ -114,10 +111,6 @@
 }
 
 @media (max-width: 770px) {
-  .container {
-    max-width: 420px;
-    margin: 0 auto;
-  }
   .help__decoration {
     display: none;
   }

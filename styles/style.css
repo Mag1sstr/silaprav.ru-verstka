@@ -28,6 +28,7 @@
 body {
   font-family: "GothamPro";
   font-weight: 400;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -48,6 +49,7 @@ a {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  gap: 20px;
 }
 .lawyer__info {
   margin-bottom: 60px;
@@ -97,6 +99,7 @@ a {
   height: 176px;
 }
 .lawyer__img {
+  position: relative;
   width: 648px;
   height: 582px;
   background-image: url(../images/lawyer.png);
@@ -109,7 +112,7 @@ a {
   position: absolute;
   right: 0;
   bottom: 90px;
-  z-index: 0;
+  z-index: -1;
 }
 
 /* result */
@@ -150,6 +153,7 @@ a {
   padding-bottom: 45px;
   padding-right: 50px;
   margin-bottom: 40px;
+
   & > b {
     position: relative;
     z-index: 100;
@@ -204,4 +208,65 @@ a {
   height: 272px;
   left: 0;
   top: 346px;
+}
+
+@media (max-width: 1498px) {
+  .lawyer__img-dec {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .result__row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 826px) {
+  .lawyer__row {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  .lawyer__img {
+    align-self: center;
+  }
+}
+@media (max-width: 712px) {
+  .lawyer__img {
+    width: 500px;
+  }
+  .result__col {
+    width: 100%;
+  }
+}
+@media (max-width: 580px) {
+  .lawyer__img {
+    max-width: 500px;
+    width: 100%;
+  }
+  .lawyer__info-btn {
+    padding: 18px 24px;
+    font-size: 20px;
+  }
+  .lawyer__info-btn::before {
+    display: none;
+  }
+  .result__img-dec {
+    display: none;
+  }
+  .result__img {
+    max-width: 492px;
+    width: 100%;
+  }
+  .result__col-item {
+    padding-left: 70px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 30px;
+  }
+}
+@media (max-width: 390px) {
+  .lawyer__info-btn {
+    font-size: 16px;
+  }
 }
