@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles/normalize.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/help.css" />
     <link rel="stylesheet" href="styles/advantages.css" />
@@ -97,7 +98,7 @@
       </div>
     </div>
 
-    <div class="help">
+    <div class="help" data-aos="fade-up">
       <div class="container">
         <div class="help__inner">
           <h2 class="help__title">
@@ -150,7 +151,7 @@
       </div>
     </div>
 
-    <section class="result">
+    <section class="result" data-aos="fade-up">
       <div class="container">
         <div class="result__row">
           <div class="result__block">
@@ -210,7 +211,7 @@
       </div>
     </section>
 
-    <div class="container">
+    <div class="container" data-aos="fade-up">
       <div class="consult">
         <div class="consult__container">
           <h2 class="consult__title">
@@ -275,7 +276,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container" data-aos="fade-up">
       <div class="business">
         <div class="business__content">
           <h3 class="business__title">Первый шаг — консультация юриста</h3>
@@ -380,5 +381,10 @@
         </div>
       </div>
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
